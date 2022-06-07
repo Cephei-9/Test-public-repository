@@ -1,4 +1,10 @@
 public class MoveScript
 {
+    public void Start(){
 
+    }
+
+    public void Update(){
+        
+    }
 }
