@@ -18,9 +18,13 @@ public class MoveScript
     }
 
     public void Update(){
+        Accelerate();
+
+        //Add current speed how move multiply
+    }
+
+    public void Accelerate(){
         currentSpeed += acceleration * Time.deltaTime;
         currentSpeed = Mathf.Min(currentSpeed, speed);
-
-        //Add this how move multiply
     }
 }
