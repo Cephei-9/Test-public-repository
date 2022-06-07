@@ -16,6 +16,6 @@ public class MoveScript
     }
 
     public void Update(){
-        
+        transform.position == transform.forward * speed;
     }
 }
