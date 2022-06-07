@@ -22,6 +22,9 @@ public class MoveScript
     }
 
     public void Update(){
+        if(CheckGround() == false)
+            currentSpeed = 0;
+
         Accelerate();
 
         transform.position == transform.forward * currentSpeed * Time.deltaTime;
