@@ -7,21 +7,32 @@ public class MoveScript
 
     public float speed = 5;
     public float acceleration = 1;
+
+    private float currentSpeed;
     
     public void Awake()
     {
         if(speed == 0 || acceleration == 0)
             return;
     }
-
         
     public void Start()
     {
 
     }
 
-    public void Update()
-    {
-        transform.position == transform.forward * speed * Time.deltaTime;
+    public void Update(){
+        Accelerate();
+
+        transform.position == transform.forward * currentSpeed * Time.deltaTime;
+    }
+
+    public void Accelerate(){
+        currentSpeed += acceleration * Time.deltaTime;
+        currentSpeed = Mathf.Min(currentSpeed, speed);
+    }
+
+    private bool CheckGround(){
+        return transform.position.y == 0;
     }
 }
