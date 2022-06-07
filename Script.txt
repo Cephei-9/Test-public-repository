@@ -13,7 +13,6 @@ public class MoveScript
         if(speed == 0 || acceleration == 0)
             return;
     }
-
         
     public void Start()
     {
