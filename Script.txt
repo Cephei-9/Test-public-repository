@@ -31,4 +31,8 @@ public class MoveScript
         currentSpeed += acceleration * Time.deltaTime;
         currentSpeed = Mathf.Min(currentSpeed, speed);
     }
+
+    private bool CheckGround(){
+        return transform.position.y == 0;
+    }
 }
