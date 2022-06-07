@@ -1,3 +1,6 @@
+using System;
+using UnityEngine;
+
 public class MoveScript
 {
     //This script move monobehaviour object
