@@ -24,7 +24,7 @@ public class MoveScript
         transform.position == transform.forward * speed;
     }
 
-    private void CheckGround(){
-        
+    private bool CheckGround(){
+        return transform.position.y == 0;
     }
 }
