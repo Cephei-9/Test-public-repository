@@ -20,7 +20,8 @@ public class MoveScript
 
     }
 
-    public void Update(){
-        transform.position == transform.forward * speed;
+    public void Update()
+    {
+        transform.position == transform.forward * speed * Time.deltaTime;
     }
 }
