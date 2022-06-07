@@ -4,6 +4,8 @@ public class MoveScript
 
     public float speed = 5;
     public float acceleration = 1;
+
+    private float currentSpeed;
     
     public void Awake(){
         if(speed == 0 || acceleration == 0)
@@ -16,6 +18,9 @@ public class MoveScript
     }
 
     public void Update(){
-        
+        currentSpeed += acceleration * Time.deltaTime;
+        currentSpeed = Mathf.Min(currentSpeed, speed);
+
+        //Add this how move multiply
     }
 }
