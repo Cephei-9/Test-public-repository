@@ -5,6 +5,8 @@ public class MoveScript
 {
     //This script move monobehaviour object
 
+    //Hey! I'm Vasya!
+
     public float speed = 5;
     public float acceleration = 1;
 
@@ -18,7 +20,7 @@ public class MoveScript
         
     public void Start()
     {
-
+        
     }
 
     public void Update(){
