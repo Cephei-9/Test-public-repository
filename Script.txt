@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
 
-public class MoveScript
+public class MoveScript : MonoBehaviour
 {
     //This script move monobehaviour object
 
-    //Hey! I'm Vasya!
+    //Don't set parrametrs on zero
 
     public float speed = 5;
     public float acceleration = 1;
